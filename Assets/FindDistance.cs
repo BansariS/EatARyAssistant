@@ -7,7 +7,6 @@ public class FindDistance : MonoBehaviour
 {
     public Transform other;
     public RectTransform rectTransform;
-
     private float minimumdistance = 358.8824F;
     
 
@@ -20,8 +19,7 @@ public class FindDistance : MonoBehaviour
            
             if (dist <= minimumdistance)
             {
-                rectTransform.localScale = new Vector3(1, 1, 1);
-                
+                rectTransform.localScale = new Vector3(1, 1, 1);     
             }
             else
             {
