@@ -12,11 +12,6 @@ public class Raycasttesting : MonoBehaviour
     private VideoPlayer vPlayer;
     private Image rawImage;
 
-   
-
-
-
-
     // Update is called once per frame
     void FixedUpdate()
     {
@@ -37,8 +32,6 @@ public class Raycasttesting : MonoBehaviour
                 rawImageGameObject.SetActive(true);
                 videoGameObject.SetActive(true);
                 vPlayer.Play();
-                Debug.Log("i am here");
-
             }
             
 
@@ -46,8 +39,6 @@ public class Raycasttesting : MonoBehaviour
         }
         else
         {
-            Debug.Log("i am not here");
-
             rawImageGameObject.SetActive(false);
            
 
