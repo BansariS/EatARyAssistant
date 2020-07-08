@@ -24,8 +24,6 @@ public class Raycasttesting : MonoBehaviour
 
         if (Physics.Raycast(ray, out hit))
         {
-
-            Debug.Log("i am here top first");
             if (hit.collider.tag == "foodmap")
             {
                 Debug.DrawLine(hit.point, hit.point + transform.up * 5, Color.green);
@@ -33,24 +31,10 @@ public class Raycasttesting : MonoBehaviour
                 videoGameObject.SetActive(true);
                 vPlayer.Play();
             }
-            
-
-
         }
         else
         {
             rawImageGameObject.SetActive(false);
-           
-
-
         }
-
-
     }
-
-    
-
-    
-
-
 }
